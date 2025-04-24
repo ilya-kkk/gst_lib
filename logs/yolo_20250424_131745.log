@@ -1,0 +1,15 @@
+2025-04-24 13:17:45,283 - INFO - Проверка GStreamer
+2025-04-24 13:17:45,305 - INFO - Плагин udpsrc доступен
+2025-04-24 13:17:45,325 - INFO - Плагин rtpjpegdepay доступен
+2025-04-24 13:17:45,345 - INFO - Плагин jpegdec доступен
+2025-04-24 13:17:45,366 - INFO - Плагин videoconvert доступен
+2025-04-24 13:17:45,386 - INFO - Плагин appsink доступен
+2025-04-24 13:17:45,405 - INFO - Плагин appsrc доступен
+2025-04-24 13:17:45,423 - INFO - Плагин jpegenc доступен
+2025-04-24 13:17:45,444 - INFO - Плагин rtpjpegpay доступен
+2025-04-24 13:17:45,444 - INFO - Инициализация GStreamer...
+2025-04-24 13:17:45,444 - INFO - Входной pipeline: udpsrc port=5000 caps="application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)JPEG, payload=(int)26" ! rtpjpegdepay ! jpegdec ! videoconvert ! appsink
+2025-04-24 13:17:45,444 - INFO - Выходной pipeline: appsrc ! videoconvert ! jpegenc ! rtpjpegpay ! udpsink host=127.0.0.1 port=5001
+2025-04-24 13:17:45,444 - ERROR - Ошибка: Не удалось открыть входной поток GStreamer
+2025-04-24 13:17:45,444 - INFO - Ожидание данных на порту 5000...
+2025-04-24 13:23:42,730 - INFO - Программа остановлена пользователем

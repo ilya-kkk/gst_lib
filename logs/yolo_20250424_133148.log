@@ -1,0 +1,18 @@
+2025-04-24 13:31:48,874 - INFO - Проверка GStreamer
+2025-04-24 13:31:48,896 - INFO - Плагин udpsrc доступен
+2025-04-24 13:31:48,918 - INFO - Плагин rtpjpegdepay доступен
+2025-04-24 13:31:48,938 - INFO - Плагин jpegdec доступен
+2025-04-24 13:31:48,959 - INFO - Плагин videoconvert доступен
+2025-04-24 13:31:48,979 - INFO - Плагин appsink доступен
+2025-04-24 13:31:49,000 - INFO - Плагин appsrc доступен
+2025-04-24 13:31:49,022 - INFO - Плагин jpegenc доступен
+2025-04-24 13:31:49,045 - INFO - Плагин rtpjpegpay доступен
+2025-04-24 13:31:49,045 - INFO - Инициализация GStreamer...
+2025-04-24 13:31:49,045 - INFO - Входной pipeline: udpsrc port=5000 caps="application/x-rtp,media=(string)video,clock-rate=(int)90000,encoding-name=(string)JPEG,payload=(int)26" ! rtpjpegdepay ! jpegdec ! videoconvert ! appsink
+2025-04-24 13:31:49,046 - INFO - Выходной pipeline: appsrc ! videoconvert ! jpegenc ! rtpjpegpay ! udpsink host=127.0.0.1 port=5001
+2025-04-24 13:31:49,046 - ERROR - Ошибка: Не удалось открыть входной поток GStreamer
+2025-04-24 13:31:49,046 - ERROR - Ошибка при проверке порта: [Errno 98] Address already in use
+2025-04-24 13:31:49,046 - INFO - Освобождение ресурсов...
+2025-04-24 13:31:49,047 - INFO - Ресурсы освобождены
+2025-04-24 13:31:49,047 - INFO - Освобождение ресурсов...
+2025-04-24 13:31:49,047 - INFO - Ресурсы освобождены
